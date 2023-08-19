@@ -3,6 +3,7 @@
     class="redmi-inside-box"
     *ngFor="let RedmiHalfDetails of rredmi"
     [redmiHalfDetails]="RedmiHalfDetails"
+    (click)="selected(RedmiHalfDetails)"
   >
   </app-redmi-inside-box>
 </div>

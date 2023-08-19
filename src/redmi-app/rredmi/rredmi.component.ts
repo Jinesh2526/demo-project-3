@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { redmiinfo } from '../redmi-full-details';
 import { RedmiHalfDetails } from '../redmi-half-details';
 import { RedmiInsideBoxComponent } from './redmi-inside-box/redmi-inside-box.component';
@@ -13,10 +13,15 @@ import { RedmiInsideBoxComponent } from './redmi-inside-box/redmi-inside-box.com
 })
 export class RredmiComponent implements OnInit {
 rredmi: RedmiHalfDetails[]=[];
+@Output()redmiSelected=new EventEmitter<RedmiHalfDetails>();
   constructor() { }
 
   ngOnInit() {
     this.rredmi=redmiinfo;
+  }
+  selected(Hello:RedmiHalfDetails){
+    console.log(Hello);
+    this.redmiSelected.emit(Hello)
   }
 
 }

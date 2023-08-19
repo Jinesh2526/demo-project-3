@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { RedmiHalfDetails } from '../redmi-half-details';
 
 @Component({
   standalone:true,
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./redmi-details.component.css']
 })
 export class RedmiDetailsComponent implements OnInit {
-
+@Input()MI!:RedmiHalfDetails;
   constructor() { }
 
   ngOnInit() {

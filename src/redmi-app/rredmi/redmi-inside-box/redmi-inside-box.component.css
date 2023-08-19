@@ -1,0 +1,39 @@
+.bigbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid #ccc; */
+  height: 45vh;
+  width: 25rem;
+  background-color: white;
+  padding: 3rem;
+  border: 3rem solid #ccc;
+}
+.bigbox:hover {
+  background-color: aqua;
+  height: 48vh;
+  /* width: 24rem; */
+  box-shadow: 1px 1px 3px rgba(250, 250, 250, 0.3);
+}
+.DP {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
+  width: 100%;
+  background-color: white;
+}
+.DP > img {
+  height: 9rem;
+}
+.name {
+  font-family: 'Cedarville Cursive', cursive;
+  font-size: 12px;
+}
+/* .field{
+  font-family: 'Amita', cursive;
+}
+.info{
+  font-size: 15px;
+} */
